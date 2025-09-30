@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Task</title>
+  <link rel="stylesheet" href="addtask.css">
+</head>
+<body>
+  <div class="container">
+    <div class="task-box">
+      <h2>Add New Task</h2>
+      <form id="addTaskForm">
+        <input type="text" id="title" placeholder="Task Title" required>
+        <textarea id="desc" placeholder="Description"></textarea>
+        <select id="priority" required>
+          <option value="">Select Priority</option>
+          <option value="completed">Low (Green)</option>
+          <option value="pending">Medium (Yellow)</option>
+          <option value="overdue">High (Red)</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+      <button id="backBtn">Back</button>
+    </div>
+  </div>
+  <script src="addtask.js"></script>
+</body>
+</html>
