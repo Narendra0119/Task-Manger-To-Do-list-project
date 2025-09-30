@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Task</title>
+  <link rel="stylesheet" href="editmodal.css">
+</head>
+<body>
+  <div class="container">
+    <div class="task-box">
+      <h2>Edit Task</h2>
+      <form id="editTaskForm">
+        <input type="text" id="title" required>
+        <textarea id="desc"></textarea>
+        <select id="priority" required>
+          <option value="">Select Priority</option>
+          <option value="completed">Low (Green)</option>
+          <option value="pending">Medium (Yellow)</option>
+          <option value="overdue">High (Red)</option>
+        </select>
+        <button type="submit">Save</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </form>
+    </div>
+  </div>
+  <script src="editmodal.js"></script>
+</body>
+</html>
